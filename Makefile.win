@@ -1,0 +1,14 @@
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before b5i2iso.exe all-after
+
+
+b5i2iso.exe : src/b5i2iso.o
+	gcc.exe src/b5i2iso.o -o "b5i2iso.exe"
+
+src/b5i2iso.o: src/b5i2iso.c
+	gcc.exe -c src/b5i2iso.c -o src/b5i2iso.o
+
+
+clean: clean-custom
+	rm -f src/b5i2iso.o b5i2iso.exe
