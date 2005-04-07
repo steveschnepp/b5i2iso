@@ -1,1 +1,12 @@
+
+v0.2 07/04/05
+
+	Fixed Makefile
+	Added support for LFS (Large File Support)
+	Added progress bar
+	Added verbose mode
+	Added support for BWI image
+	Added create cuesheet (only for data cd)
+	Added detect iso-9660 image
+
 v0.1 first release

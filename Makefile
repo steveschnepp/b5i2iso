@@ -1,6 +1,6 @@
-all: b5i2iso.c
-	gcc src/b5i2iso.c -o b5i2iso
+all: ./src/b5i2iso.c
+	gcc ./src/b5i2iso.c -o b5i2iso
 
 clean:
-	rm -f b5i2iso.c
+	rm -f b5i2iso
 	rm -f *~
